@@ -1,5 +1,6 @@
 pedidos = []
 
+
 def adiciona_pedido(nome, sabor):
     pedido = {'nome': nome, 'sabor': sabor}
     pedidos.append(pedido)
