@@ -1,11 +1,12 @@
 pedidos = []
 
 
-def adiciona_pedido(nome, sabor):
-    pedido = {'nome': nome, 'sabor': sabor}
+def cria_pedido(nome, sabor, observacao='Sem observacoes'):
+    pedido = {'nome': nome, 'sabor': sabor, 'observacao': observacao}
     return pedido
 
-pedidos.append(adiciona_pedido('Mario', 'pepperoni'))
-pedidos.append(adiciona_pedido('Marco', 'bacon'))
+pedidos.append(cria_pedido('Mario', 'pepperoni'))
+pedidos.append(cria_pedido('Marco', 'bacon'))
 for pedido in pedidos:
-    print('Nome: {0}\nSabor: {1}\n'.format(pedido['nome'], pedido['sabor']))
+    t = 'Nome: {0}\nSabor: {1}\nObservacao: {2}\n'
+    print(t.format(pedido['nome'], pedido['sabor'], pedido['observacao']))
